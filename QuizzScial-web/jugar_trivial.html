@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Coda-Masters">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>QuizzScial - Trivial</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dist/css/justified-nav.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <nav>
+          <ul class="nav nav-justified">
+            <li><a href="clanes.html">Clanes</a></li>
+            <li class="active"><a href="jugar.html">Jugar</a></li>
+            <li><a href="#">Preguntas</a></li>
+            <li><a href="estadisticas.html">Estadísticas</a></li>
+            <li><a href="#">Muro</a></li>
+            <li><a href="#">Cuenta</a></li>
+            <li><a href="index.html">Salir</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+
+         <p> Tema: Estados de USA </p>
+         <p id="pregunta"></p>
+
+        <p> <a class="btn btn-primary btn-lg" href="jugar_trivial.html" role="button" id="r1"></a> </p>
+        <p> <a class="btn btn-primary btn-lg" href="jugar_trivial.html" role="button" id="r2"></a> </p>   
+        <p> <a class="btn btn-primary btn-lg" href="jugar_trivial.html" role="button" id="r3"></a> </p>
+        <p> <a class="btn btn-primary btn-lg" href="jugar_trivial.html" role="button" id="r4"></a> </p>  
+        
+        <p style="font-size:15px; margin-top:50px;"> <i> Tema y preguntas estáticas, pendiente de mejora </i> </p>
+
+      </div>
+
+
+      <!-- Carga estática de preguntas (en versiones posteriores se cargará de una BD) -->
+      <script>
+     var preguntas = ["¿Qué estado tiene como capital Denver?",
+     "¿Donde se desarrolla la serie Dexter?",
+     "¿Estado más poblado y donde se encuentra Hollywood?",
+     "¿Qué estado hay al norte de Dakota del Sur?",
+     "Estado donde pertenecen los Houston Rockets",
+     "Ubicación del equipo de Futbol New York City FC",
+     "¿Estado originario de George W. Bush?",
+     "Su capital es Juneau y es 'inaccesible por tierra'",
+     "Estado originario del primer presidente de USA",
+     "Estado cuyo nombre es originario de la palabra 'yuta'",
+     "¿Donde despegó la misión Apollo 11?"]; 
+
+      var respuestas = ["Colorado",
+      "Florida",
+      "California",
+      "North Dakota",
+      "Texas",
+      "New York",
+      "Connecticut",
+      "Alaska",
+      "Washington",
+      "Utah",
+      "Florida"]; 
+
+      var num = Math.round(Math.random()*10);
+      var pregunta = preguntas[num];         
+      document.getElementById("pregunta").innerHTML = pregunta ; 
+      
+      document.getElementById("r1").innerHTML = respuestas[num] ;
+      document.getElementById("r2").innerHTML = respuestas[(num+1)%9] ; 
+      document.getElementById("r3").innerHTML = respuestas[(num+2)%9] ; 
+      document.getElementById("r4").innerHTML = respuestas[(num+3)%9] ;  
+
+      </script>
+
+
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
