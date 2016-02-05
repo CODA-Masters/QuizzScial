@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="elarrecifetrivial.codamasters.com.elarrecifetrivial.AcceptActivity"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/init_banner"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_quizzscial" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Autoriza a QuizzScial a usar su cuenta?"
+            android:textColor="#000000"
+            android:textStyle="bold|italic"
+            android:textSize="15sp"
+            android:id="@+id/textView"
+            android:layout_below="@+id/init_banner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:id="@+id/btn_cancelar"
+            android:background="#787878"
+            android:layout_marginTop="82dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:radius="14dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autorizo"
+            android:id="@+id/btn_aceptar"
+            android:background="@color/rightAnswer"
+            android:layout_alignTop="@+id/btn_cancelar"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:radius="14dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

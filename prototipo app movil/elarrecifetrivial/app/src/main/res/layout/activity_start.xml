@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="elarrecifetrivial.codamasters.com.elarrecifetrivial.StartActivity"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/init_banner"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_quizzscial" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/login_btn"
+            android:background="@drawable/custom_btn"
+            android:layout_below="@+id/imageButtonTwitter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonFaceBook"
+            android:layout_alignRight="@+id/login_btn"
+            android:layout_alignEnd="@+id/login_btn"
+            android:layout_below="@+id/init_banner"
+            android:background="@drawable/facebook"
+            android:layout_alignLeft="@+id/imageButtonTwitter"
+            android:layout_alignStart="@+id/imageButtonTwitter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonGoogle"
+            android:background="@drawable/google"
+            android:layout_below="@+id/imageButtonFaceBook"
+            android:layout_marginTop="40dp"
+            android:layout_alignLeft="@+id/imageButtonTwitter"
+            android:layout_alignStart="@+id/imageButtonTwitter"
+            android:layout_alignRight="@+id/imageButtonFaceBook"
+            android:layout_alignEnd="@+id/imageButtonFaceBook" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonTwitter"
+            android:layout_below="@+id/imageButtonGoogle"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/twitter"
+            android:layout_alignRight="@+id/login_btn"
+            android:layout_alignEnd="@+id/login_btn"
+            android:layout_alignLeft="@+id/login_btn"
+            android:layout_alignStart="@+id/login_btn" />
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
